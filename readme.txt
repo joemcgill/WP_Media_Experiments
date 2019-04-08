@@ -19,4 +19,4 @@ This is a plugin for testing out experimental media functionality that may event
 
 - Scaffolds the plugin
 - Adds initial functionality for filtering core image and gallery blocks
-- Adds 'loading="lazy"' attributes to image and gallery blocks
+- Adds 'loading="lazy"' attributes to image, gallery, and media-text blocks
