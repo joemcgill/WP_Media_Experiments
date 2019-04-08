@@ -29,6 +29,10 @@ function register_blocks() {
 	register_block_type( 'core/gallery', [
 		'render_callback' => __NAMESPACE__ . '\\gallery_render_callback',
 	] );
+
+	register_block_type( 'core/media-text', [
+		'render_callback' => __NAMESPACE__ . '\\media_text_render_callback',
+	] );
 }
 
 /**
@@ -53,4 +57,16 @@ function image_render_callback( $attributes, $content ) {
  */
 function gallery_render_callback( $attributes, $content ) {
 	return apply_filters( 'wp_media_experiments/gallery_content', $content );
+}
+
+/**
+ * Render callback for the core/media-text block.
+ *
+ * @param array $attributes Passed attributes of the image block.
+ * @param HTML  $content    The content of the image block.
+ *
+ * @return HTML rendered content.
+ */
+function media_text_render_callback( $attributes, $content ) {
+	return apply_filters( 'wp_media_experiments/media_text_content', $content );
 }

@@ -15,6 +15,7 @@ namespace WP_Media_Experiments\LazyLoad;
 function bootstrap() {
 	add_filter( 'wp_media_experiments/image_content', __NAMESPACE__ . '\\add_lazy_loading_attr' );
 	add_filter( 'wp_media_experiments/gallery_content', __NAMESPACE__ . '\\add_lazy_loading_attr' );
+	add_filter( 'wp_media_experiments/media_text_content', __NAMESPACE__ . '\\add_lazy_loading_attr' );
 }
 
 /**
