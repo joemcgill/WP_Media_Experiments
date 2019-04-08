@@ -32,7 +32,7 @@ function register_blocks() {
 }
 
 /**
- * Global Render Callback for images.
+ * Render callback for the core/image block.
  *
  * @param array $attributes Passed attributes of the image block.
  * @param HTML  $content    The content of the image block.
@@ -44,7 +44,7 @@ function image_render_callback( $attributes, $content ) {
 }
 
 /**
- * Global Render Callback for galleries.
+ * Render callback for the core/gallery block.
  *
  * @param array $attributes Passed attributes of the image block.
  * @param HTML  $content    The content of the image block.
