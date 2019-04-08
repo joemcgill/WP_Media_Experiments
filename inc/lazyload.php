@@ -21,8 +21,8 @@ function bootstrap() {
 /**
  * Add a lazy loading attribute to WordPress image blocks.
  *
- * @param [type] $content
- * @return void
+ * @param HTML $content The block content to filter.
+ * @return HTML The block content with a 'loading' attribute added to each 'img' element.
  */
 function add_lazy_loading_attr( $content ) {
 	return str_replace( '<img', '<img loading="lazy"', $content );
